@@ -3,19 +3,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#333333">
 
     <!-- Tela de exibição -->
     <TextView
         android:id="@+id/displayText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#eeeeee"
-        android:padding="16dp"
+        android:background="#444444"
+        android:padding="24dp"
         android:text="0"
-        android:textSize="24sp"
-        android:gravity="end"
-        android:layout_marginBottom="16dp" />
+        android:textSize="32sp"
+        android:gravity="end|center_vertical"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="16dp" />
 
     <!-- Botões -->
     <GridLayout
@@ -31,32 +34,46 @@
             android:text="C"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_columnSpan="1"
-            android:layout_rowSpan="1"
             android:layout_margin="4dp"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1"/>
+            android:layout_rowWeight="1"
+            android:background="@drawable/rounded_button_orange"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"/>
 
-        <!-- Botões numéricos e operacionais -->
-        <Button android:id="@+id/buttonDivide" android:text="/" />
-        <Button android:id="@+id/buttonMultiply" android:text="*" />
-        <Button android:id="@+id/buttonSubtract" android:text="-" />
+        <!-- Botões operacionais -->
+        <Button android:id="@+id/buttonDivide" android:text="/" android:background="@drawable/rounded_button_brown" android:textColor="#FFFFFF" android:textSize="24sp"/>
+        <Button android:id="@+id/buttonMultiply" android:text="*" android:background="@drawable/rounded_button_brown" android:textColor="#FFFFFF" android:textSize="24sp"/>
+        <Button android:id="@+id/buttonSubtract" android:text="-" android:background="@drawable/rounded_button_brown" android:textColor="#FFFFFF" android:textSize="24sp"/>
 
-        <Button android:id="@+id/button7" android:text="7" />
-        <Button android:id="@+id/button8" android:text="8" />
-        <Button android:id="@+id/button9" android:text="9" />
-        <Button android:id="@+id/buttonAdd" android:text="+" />
+        <!-- Botões numéricos -->
+        <Button android:id="@+id/button7" android:text="7" android:background="@drawable/rounded_button_grey" android:textColor="#FFFFFF" android:textSize="24sp"/>
+        <Button android:id="@+id/button8" android:text="8" android:background="@drawable/rounded_button_grey" android:textColor="#FFFFFF" android:textSize="24sp"/>
+        <Button android:id="@+id/button9" android:text="9" android:background="@drawable/rounded_button_grey" android:textColor="#FFFFFF" android:textSize="24sp"/>
+        <Button android:id="@+id/buttonAdd" android:text="+" android:background="@drawable/rounded_button_brown" android:textColor="#FFFFFF" android:textSize="24sp"/>
 
-        <Button android:id="@+id/button4" android:text="4" />
-        <Button android:id="@+id/button5" android:text="5" />
-        <Button android:id="@+id/button6" android:text="6" />
+        <Button android:id="@+id/button4" android:text="4" android:background="@drawable/rounded_button_grey" android:textColor="#FFFFFF" android:textSize="24sp"/>
+        <Button android:id="@+id/button5" android:text="5" android:background="@drawable/rounded_button_grey" android:textColor="#FFFFFF" android:textSize="24sp"/>
+        <Button android:id="@+id/button6" android:text="6" android:background="@drawable/rounded_button_grey" android:textColor="#FFFFFF" android:textSize="24sp"/>
 
-        <Button android:id="@+id/button1" android:text="1" />
-        <Button android:id="@+id/button2" android:text="2" />
-        <Button android:id="@+id/button3" android:text="3" />
-        <Button android:id="@+id/buttonEquals" android:text="=" />
+        <Button android:id="@+id/button1" android:text="1" android:background="@drawable/rounded_button_grey" android:textColor="#FFFFFF" android:textSize="24sp"/>
+        <Button android:id="@+id/button2" android:text="2" android:background="@drawable/rounded_button_grey" android:textColor="#FFFFFF" android:textSize="24sp"/>
+        <Button android:id="@+id/button3" android:text="3" android:background="@drawable/rounded_button_grey" android:textColor="#FFFFFF" android:textSize="24sp"/>
+        <Button android:id="@+id/buttonEquals" android:text="=" android:background="@drawable/rounded_button_orange" android:textColor="#FFFFFF" android:textSize="24sp"/>
 
-        <Button android:id="@+id/button0" android:text="0" android:layout_columnSpan="2" />
-        <Button android:id="@+id/buttonDot" android:text="." />
+        <!-- Botões 0 e ponto -->
+        <Button
+            android:id="@+id/button0"
+            android:text="0"
+            android:layout_columnSpan="2"
+            android:background="@drawable/rounded_button_grey"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"/>
+        <Button
+            android:id="@+id/buttonDot"
+            android:text="."
+            android:background="@drawable/rounded_button_grey"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"/>
     </GridLayout>
 </LinearLayout>
